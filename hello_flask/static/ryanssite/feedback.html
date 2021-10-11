@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ryan Ringer Final Project Feedback</title>
+    <link href="layout.css" type="text/css" rel="stylesheet">
+
+    <link href="mainStyles.css" type="text/css" rel="stylesheet">
+
+
+    <!--
+	Final Project by __________________________ Ryan Ringer
+-->
+
+</head>
+
+<body>
+    <header>
+        <img id="headerimg" src="banner.png" alt="Ryan Ringer's World">
+    </header>
+    <nav>
+        <p><a id="hom" href="index.html"><img src=homeButton.png height="25" alt="Home"></a></p>
+        <p><a id="fav" href="favlinks.html"><img src="flButton.png" height=25 alt="Favorite Links"></a></p>
+        <p><a id="res" href="resume.html"><img src="resumeButton.png" height=25 alt="Resume"></a></p>
+        <p><a id="dro" href="drones.html"><img src="dronesButton.png" height=25 alt="Drones"></a></p>
+        <p><img src=fbInverse.png height=25 alt="Feedback"></p>
+    </nav>
+    <h1>Ryan Ringer's Feedback Page</h1>
+        <p><img class="floatright" src="want-feedback.png" alt="Want Feedback"></p>
+    <p>We welcome your thoughts! Please feel free to fill out our form below and send us your feedback. </p>
+
+    <form action="response.html" method="get">
+        <fieldset id="feedbackinfo">
+            <legend>Feedback Info</legend>
+            <p><label for="comments">Comments: </label><textarea rows="5" cols="40" name="comments" id="comments" required="required" placeholder="**Required Entry**"></textarea>
+            </p>
+            <p><label for="re">Your Feedback is regarding:</label>
+                <select name="re" id="re">
+                    <option value="none">Choose One</option>
+                    <option value="index">Home Page</option>
+                    <option value="favlinks">Favorite Links Page</option>
+                    <option value="resume">Resume Page</option>
+                    <option value="other">Other Page</option>
+                    <option value="feedback">Feedback Page</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset id="contactinfo">
+            <legend>Contact Info</legend>
+            <p><label for="name">Name: </label><input type="text" name="name" id="name" required="required" placeholder="**Required Entry**"></p>
+            <p>How can we contact you? (check all that apply)<br>
+                <input type="checkbox" name="call" id="call"><label for="call"> Call? </label><input type="checkbox" name="text" id="text"><label for="text"> Text? </label><input type="checkbox" name="email" id="email"><label for="email"> Email? </label></p>
+            <p><label for="phonenum">Phone: </label><input type="tel" name="phonenum" id="phonenum" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Use xxx-xxx-xxxx"></p>
+            <p><label for="emailaddy">Email: </label><input type="email" name="emailaddy" id="emailaddy"></p>
+        </fieldset>
+        <p><input type="submit" value="Send Feedback"></p>
+    </form>
+
+    <footer>
+        <p>Copyright Ryan Ringer, all rights reserved.</p>
+    </footer>
+
+</body></html>

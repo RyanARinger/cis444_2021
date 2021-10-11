@@ -30,8 +30,8 @@ with open("secret", "r") as f:
 
 @app.route('/') #endpoint
 def index():
-    #return 'Web App with Python Ryan!' + USER_PASSWORDS['cjardin']
-    return render_template('/ryanssite/index.html')
+    return 'Web App with Python Ryan!' + USER_PASSWORDS['cjardin']
+    #return render_template('/ryanssite/index.html')
 
 @app.route('/buy') #endpoint
 def buy():

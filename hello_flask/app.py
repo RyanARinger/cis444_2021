@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,send_from_directory
 from flask_json import FlaskJSON, JsonError, json_response, as_json
 
 import datetime
@@ -14,7 +14,7 @@ IMGS_URL = {
             "PRD" : "http://d2cbuxq67vowa3.cloudfront.net/images"
             }
 
-CUR_ENV = "PRD"
+CUR_ENV = "DEV"
 
 @app.route('/') #endpoint
 def index():
@@ -54,8 +54,11 @@ def get_time():
     return json_response(data={"password" : request.args.get('password'),
                                 "class" : "cis44",
                                 "serverTime":str(datetime.datetime.now())
-                            }
-                )
+                            })
+
+@app.route('/getClientTime') #endpoint
+def get_client_time():
+    return render_template('client_time.html', img_url=IMGS_URL[CUR_ENV])
 
 
 app.run(host='0.0.0.0', port=80)

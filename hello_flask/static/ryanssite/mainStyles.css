@@ -1,0 +1,60 @@
+body{
+    background-color: #fbf865; 
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: Impact, Charcoal, sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-size: 14pt;
+    color: #dc4236;
+}
+#headerimg{  
+    height: 90px
+}
+nav{
+    width: 150px;
+    height: 2250px; /*This is really long cause I made my "other" page really long*/
+    float: left;    /*and i dont know how to make height dynamic*/
+    background-color: #ff6256;
+}
+#gpaimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style-image: url(rrwBullet.png);
+    list-style-position: inside
+    
+}
+.listimage{
+    float: right;
+    margin-left: 25px;
+    border-style: dashed;
+    border-color: #dc4236;
+}
+a{
+    color: #dc4236;
+}
+dd{
+    margin-bottom: 50px;
+}
+#mydrone{
+    float: right;
+    border-style: dashed;
+    border-color: #dc4236;
+}
+div{
+    column-count: 2;
+}
+.homeSec{
+    border-style: double;
+    color: #dc4236;
+    background-color: #fdf58a; 
+}
+#resdl{
+    text-decoration: none;
+    border-style: solid;
+    border-color: #dc4236;
+    background-color: #fdf58a;
+}

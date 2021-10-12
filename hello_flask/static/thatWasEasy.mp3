@@ -1,0 +1,925 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta name="format-detection" content="telephone=no" />
+    <title>That was easy Sound From My Soundboard - Soundboard.com - Create & Download Free Sounds, Sound Effects, Mp3, and more</title>
+    <meta name="description" content="Friends" />
+    <meta name="author" content="http://www.soundboard.com/" />
+    <link rel="image_src" href="https://www.soundboard.com/boardicon/LethalAcid1.jpg" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="Stylesheet" /><link href="/css/style.min.css" type="text/css" rel="stylesheet" /><link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script type="text/javascript">
+		(function(e,t){typeof module!="undefined"&&module.exports?module.exports=t():typeof define=="function"&&define.amd?define(t):this[e]=t()})("$script",function(){function p(e,t){for(var n=0,i=e.length;n<i;++n)if(!t(e[n]))return r;return 1}function d(e,t){p(e,function(e){return t(e),1})}function v(e,t,n){function g(e){return e.call?e():u[e]}function y(){if(!--h){u[o]=1,s&&s();for(var e in f)p(e.split("|"),g)&&!d(f[e],g)&&(f[e]=[])}}e=e[i]?e:[e];var r=t&&t.call,s=r?t:n,o=r?e.join(""):t,h=e.length;return setTimeout(function(){d(e,function t(e,n){if(e===null)return y();!n&&!/^https?:\/\//.test(e)&&c&&(e=e.indexOf(".js")===-1?c+e+".js":c+e);if(l[e])return o&&(a[o]=1),l[e]==2?y():setTimeout(function(){t(e,!0)},0);l[e]=1,o&&(a[o]=1),m(e,y)})},0),v}function m(n,r){var i=e.createElement("script"),u;i.onload=i.onerror=i[o]=function(){if(i[s]&&!/^c|loade/.test(i[s])||u)return;i.onload=i[o]=null,u=1,l[n]=2,r()},i.async=1,i.src=h?n+(n.indexOf("?")===-1?"?":"&")+h:n,t.insertBefore(i,t.lastChild)}var e=document,t=e.getElementsByTagName("head")[0],n="string",r=!1,i="push",s="readyState",o="onreadystatechange",u={},a={},f={},l={},c,h;return v.get=m,v.order=function(e,t,n){(function r(i){i=e.shift(),e.length?v(i,r):v(i,t,n)})()},v.path=function(e){c=e},v.urlArgs=function(e){h=e},v.ready=function(e,t,n){e=e[i]?e:[e];var r=[];return!d(e,function(e){u[e]||r[i](e)})&&p(e,function(e){return u[e]})?t():!function(e){f[e]=f[e]||[],f[e][i](t),n&&n(r)}(e.join("|")),v},v.done=function(e){v([null],e)},v})
+		
+        function checkInvalidKeyword() {
+            return true;
+        }
+    </script>
+		
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
+	<script src="/js/functions.js"></script>
+	
+    
+<script type="text/javascript">
+$script('//cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js', 'player_js', function () {
+	 $(document).ready(function(){
+	  $("#jquery_jplayer_1").jPlayer({
+	   ready: function () {
+		$(this).jPlayer("setMedia", {
+		 mp3: "/handler/playTrack.ashx?id=462497"
+		});
+	   },
+	   swfPath: "/cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.swf",
+	   supplied: "mp3"
+	  });
+	 });
+});
+</script>
+<script type="text/javascript">
+	if (String(window.location.hash).substring(0, 1) == "#") {
+		window.location.hash = "";
+		window.location.href = window.location.href.slice(0, -1);
+	}
+	// Firefox version of the hack
+	if (String(location.hash).substring(0, 1) == "#") {
+		location.hash = "";
+		location.href = location.href.substring(0, location.href.length - 3);
+	}
+	
+	var boardid = "203258";
+	var __categoryid = 29;
+	var __LOGGED_USERID = 0;
+	var __OWNER_USERID = 216140;
+	var __LOGGED_USER_PHONENUMBER = "";
+	var __LOGGED_USER_FullName="";
+	var __MediaFileUrl="";
+	
+	var _SubscribedToSeeDownload = false;
+	var _AllowedShare = 'Y';
+	
+		_SubscribedToSeeDownload = true;
+	
+</script>
+
+		<script type="text/javascript">var switchTo5x = true;</script>
+    
+	<script>
+	  WebFontConfig = {
+		google: { families: [ 'Roboto:400,700:latin', 'Roboto+Condensed:400,700:latin' ] },
+		custom: { families: ['font-awesome'],  urls: ['/css/font.css']}
+	  };
+	  (function() {
+		var wf = document.createElement('script');
+		wf.src = '//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	  })();
+	  
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-64301589-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <title>
+
+</title></head>
+
+<body class="main-home">
+<div id="wrapper_body">
+	<form method="post" action="./462497" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTUyOTk0ODE2Nw9kFgJmD2QWAgIBD2QWCAIBDxYCHgtwbGFjZWhvbGRlcgUYU2VhcmNoIDU5MCw5MDAgc291bmRzLi4uZAIDDxYCHgtfIUl0ZW1Db3VudAIUFihmD2QWAmYPFQIOU2NpZW5jZS1OYXR1cmUOQW5pbWFscy9OYXR1cmVkAgEPZBYCZg8VAgtDZWxlYnJpdGllcwtDZWxlYnJpdGllc2QCAg9kFgJmDxUCCUNvbWVkaWFucwlDb21lZGlhbnNkAgMPZBYCZg8VAgVHYW1lcwVHYW1lc2QCBA9kFgJmDxUCCkhpc3RvcmljYWwHSGlzdG9yeWQCBQ9kFgJmDxUCCEhvbGlkYXlzCEhvbGlkYXlzZAIGD2QWAmYPFQIFTWVkaWEFTWVkaWFkAgcPZBYCZg8VAgRNaXNjBU1pc2MuZAIID2QWAmYPFQIGTW92aWVzBk1vdmllc2QCCQ9kFgJmDxUCB015TXVzaWMITXkgTXVzaWNkAgoPZBYCZg8VAgVPdGhlcgVPdGhlcmQCCw9kFgJmDxUCCFBlcnNvbmFsCFBlcnNvbmFsZAIMD2QWAmYPFQIIUG9kY2FzdHMIUG9kY2FzdHNkAg0PZBYCZg8VAglQb2xpdGljYWwIUG9saXRpY3NkAg4PZBYCZg8VAgpQcmFua0NhbGxzC1ByYW5rIENhbGxzZAIPD2QWAmYPFQIFUmFkaW8FUmFkaW9kAhAPZBYCZg8VAg1Tb3VuZC1FZmZlY3RzCFNvdW5kIEZYZAIRD2QWAmYPFQIGU3BvcnRzBlNwb3J0c2QCEg9kFgJmDxUCClRlbGV2aXNpb24KVGVsZXZpc2lvbmQCEw9kFgJmDxUCC1RyYXZlbC1JbnRsDFRyYXZlbC9JbnQnbGQCBA9kFggCAQ8WAh4EVGV4dAUIUEVSU09OQUxkAgIPFgIfAgVXPGEgcmVsPSdleHRlcm5hbCcgaHJlZj0naHR0cHM6Ly93d3cuc291bmRib2FyZC5jb20vc2VhcmNoLmFzcHg/a2V5d29yZD1nYW1lcyc+Z2FtZXM8L2E+ZAIEDxYCHwECBBYIAgEPZBYIZg8VAgV0aW1teRBUaW1teSBTb3VuZGJvYXJkZAIBDxUCBXRpbW15EFRpbW15IFNvdW5kYm9hcmRkAgIPD2QWAh4IX19Cb2FyZE4FBXRpbW15ZAIDDxUCAjE2BjMwMjYxNGQCAg9kFghmDxUCCXRoZWdvZGVzcw1NeSBTb3VuZGJvYXJkZAIBDxUCCXRoZWdvZGVzcw1NeSBTb3VuZGJvYXJkZAICDw9kFgIfAwUJdGhlZ29kZXNzZAIDDxUCATEEOTI0N2QCAw9kFghmDxUCFkdyZXlzX0FuYXRvbXlfVFZfY2xpcHMZR3JleSdzIEFuYXRvbXkgU291bmRib2FyZGQCAQ8VAhZHcmV5c19BbmF0b215X1RWX2NsaXBzGUdyZXkncyBBbmF0b215IFNvdW5kYm9hcmRkAgIPD2QWAh8DBRZHcmV5c19BbmF0b215X1RWX2NsaXBzZAIDDxUCAjE3BTM2Nzc0ZAIED2QWCGYPFQIJYWlyX2Jyb2NrC0FqJ3Mgc291bmRzZAIBDxUCCWFpcl9icm9jawtBaidzIHNvdW5kc2QCAg8PZBYCHwMFCWFpcl9icm9ja2QCAw8VAgIyOAQ2NDM2ZAIFD2QWAgIBDxYCHwECBRYKZg9kFgZmDxUCCHNvbHJvc2luHlVsdGltYXRlIER1a2UgTnVrZW0gU291bmRib2FyZGQCAQ8VAghzb2xyb3Npbh5VbHRpbWF0ZSBEdWtlIE51a2VtIFNvdW5kYm9hcmRkAgMPFQICNThnVGhpcyBpcyB0aGUgdWx0aW1hdGUgRHVrZSBOdWtlbSBzb3VuZGJvYXJkLCB3aXRoIG5ldyBzdHVmZiBhZGRlZCBhcyBJIGZpbmQgaXQuICBBbGwgb2YgdGhlIGNsYXNzaWMgby4uLmQCAQ9kFgZmDxUCDTIwMTZzb3VuYm9hcmQKZGFuayBtZW1lc2QCAQ8VAg0yMDE2c291bmJvYXJkCmRhbmsgbWVtZXNkAgMPFQIDNDYyZ1liIEJldHRlciArIFJhdGlvICsgTG91ZCA9IGZ1bm55IGJvem9zIChTdWdnZXN0IHN1bSBzdHVmZiB5b3Ugd291bGQgd2FudCBtZSB0byB1cGxvYWQgaW4gdGhlIGNvbW1lbnQuLi5kAgIPZBYGZg8VAg1jc2dvbnNoaXR5ZWFoBW1lbWVzZAIBDxUCDWNzZ29uc2hpdHllYWgFbWVtZXNkAgMPFQICMzUNYXJnYWVyZ2VyZy4uLmQCAw9kFgZmDxUCCmZhcnRfc291bmQYVWx0aW1hdGUgRmFydCBTb3VuZGJvYXJkZAIBDxUCCmZhcnRfc291bmQYVWx0aW1hdGUgRmFydCBTb3VuZGJvYXJkZAIDDxUCAjM2Z0RpZCB5b3UgZmFydD8gLSBOby4gVGhlbiB3aGljaCBvbmUgaXMgeW91PyBFdmVyeSBmYXJ0IHlvdSBjYW4gaW1hZ2luZSBpcyBoZXJlLi4uIFRoaXMgRmFydCBTb3VuZGJvYXIuLi5kAgQPZBYGZg8VAhNTdGFyX1RyZWtfUmluZ3RvbmVzE1N0YXIgVHJlayBSaW5ndG9uZXNkAgEPFQITU3Rhcl9UcmVrX1Jpbmd0b25lcxNTdGFyIFRyZWsgUmluZ3RvbmVzZAIDDxUCAjYzZ0JlYW0geW91ciBwaG9uZSB1cCB3aXRoIHRoZXNlIGdyZWF0IHJpbmd0b25lcyBmcm9tIHRoZSBTdGFyIFRyZWsgdHYgc2VyaWVzLiBTb3VuZCBlZmZlY3RzIGZyb20gdGhlIHMuLi5kAgcPFgIfAQIUFihmD2QWAmYPFQIOU2NpZW5jZS1OYXR1cmUOQW5pbWFscy9OYXR1cmVkAgEPZBYCZg8VAgtDZWxlYnJpdGllcwtDZWxlYnJpdGllc2QCAg9kFgJmDxUCCUNvbWVkaWFucwlDb21lZGlhbnNkAgMPZBYCZg8VAgVHYW1lcwVHYW1lc2QCBA9kFgJmDxUCCkhpc3RvcmljYWwHSGlzdG9yeWQCBQ9kFgJmDxUCCEhvbGlkYXlzCEhvbGlkYXlzZAIGD2QWAmYPFQIFTWVkaWEFTWVkaWFkAgcPZBYCZg8VAgRNaXNjBU1pc2MuZAIID2QWAmYPFQIGTW92aWVzBk1vdmllc2QCCQ9kFgJmDxUCB015TXVzaWMITXkgTXVzaWNkAgoPZBYCZg8VAgVPdGhlcgVPdGhlcmQCCw9kFgJmDxUCCFBlcnNvbmFsCFBlcnNvbmFsZAIMD2QWAmYPFQIIUG9kY2FzdHMIUG9kY2FzdHNkAg0PZBYCZg8VAglQb2xpdGljYWwIUG9saXRpY3NkAg4PZBYCZg8VAgpQcmFua0NhbGxzC1ByYW5rIENhbGxzZAIPD2QWAmYPFQIFUmFkaW8FUmFkaW9kAhAPZBYCZg8VAg1Tb3VuZC1FZmZlY3RzCFNvdW5kIEZYZAIRD2QWAmYPFQIGU3BvcnRzBlNwb3J0c2QCEg9kFgJmDxUCClRlbGV2aXNpb24KVGVsZXZpc2lvbmQCEw9kFgJmDxUCC1RyYXZlbC1JbnRsDFRyYXZlbC9JbnQnbGRkvEZelqIl4rzlSwcB6Uwxskwc9WiEbUBRfj5WUujin2I=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0EBCEE1B" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAPyZFgMX29XJksNwJY3iqmi4+3WpZQNb82rzs2KnT3rh1V6RkAfufrqJa6LpqnGFgvqR46fYrazOW30VNOLGViVJnqXYcd76LDkbLdPgYCeAQ==" />
+	<div class="header">
+		<div class="topheader">
+			<div class="upper">
+				<div class="container">
+					
+
+<div class="navbar">
+    <div class="home-4">
+        <a id="aCart" class="cartinfo" href="https://www.soundboard.com/Cart/"><i class="glyphicon glyphicon-shopping-cart"></i>
+            <span class="home-text">Cart (0)</span>
+		</a>
+    </div>
+    <div class="home-3">
+        
+        <a href="https://www.soundboard.com/login.aspx">
+			<i class="glyphicon glyphicon-log-in"></i>
+            <span class="home-text">Login</span>
+        </a>
+        
+    </div>
+    <div class="home-2">
+        <a href="https://www.soundboard.com/account">
+			<i class="glyphicon glyphicon-user"></i>
+            <span class="home-text">My Account</span>
+        </a>
+    </div>
+    <div class="home">
+        <a href="https://www.soundboard.com/">
+			<i class="glyphicon glyphicon-home"></i> 
+            <span class="home-text">Home</span>
+		</a>
+    </div>
+</div>
+
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+			<div class="container">
+				<div class="fist_line_logo">
+					<a class="menu_mobile" href="#"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+					<a  class="logo_a" href="https://www.soundboard.com/"><img alt="soundboard logo" src="/images/logo_03.png" data-2x="/images/logo_03@2x.png" /> </a>
+					<div class="home-accaunt">
+						<a href="https://www.soundboard.com/account"><i class="glyphicon glyphicon-user"></i></a>
+					</div>
+					<div class="home-cart">
+						<a id="aCart" class="cartinfo" href="https://www.soundboard.com/Cart/"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+					</div>
+				</div>
+				 
+			  <nav class="navigation" id="menu">
+				<ul class="list_menu">
+				  <li><a class="menuheader categorylink">Categories <i class="catlinkicon glyphicon glyphicon-menu-down"></i></a></li>
+					<li><a class="menuheader" href="/popular.aspx">Popular</a></li>
+					<li class="last_el">
+						<a class="create" href="#">MENU
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+						</a>
+					</li>
+				</ul>
+
+			   </nav>
+				 <div class="search">
+					<input name="ctl00$txtSearch" type="text" id="txtSearch" class="text" placeholder="Search 590,900 sounds..." />
+					<button onclick="__doPostBack('ctl00$btnSearch','')" id="btnSearch" type="submit" class="button"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button>
+				</div>
+		  </div>
+			
+			<div class="togglemenu">
+				<ul>
+					
+					<li><a href="https://www.soundboard.com/category/Science-Nature">Animals/Nature</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Celebrities">Celebrities</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Comedians">Comedians</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Games">Games</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Historical">History</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Holidays">Holidays</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Media">Media</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Misc">Misc.</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Movies">Movies</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/MyMusic">My Music</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Other">Other</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Personal">Personal</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Podcasts">Podcasts</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Political">Politics</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/PrankCalls">Prank Calls</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Radio">Radio</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Sound-Effects">Sound FX</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Sports">Sports</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Television">Television</a></li>
+					
+					<li><a href="https://www.soundboard.com/category/Travel-Intl">Travel/Int'l</a></li>
+					
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+    <div id="fb-root"></div>
+	
+    <div class="central">
+	<div class="container">
+			<div class="address">
+				<a href="https://www.soundboard.com/">Home</a>
+				<span class="glyphicon glyphicon-menu-right"></span>
+				<a href="/category/Games/">Games</a>
+				<span class="glyphicon glyphicon-menu-right"></span>
+				<a href="/sb/LethalAcid1">My Soundboard</a>
+				<span class="glyphicon glyphicon-menu-right"></span>
+				<span>That was easy </span> 
+			</div> 
+			
+            <div class="sound col-xs-12 col-sm-8">
+                
+					<div class="catd top_nomargin">
+						
+					</div>
+				
+				
+				<div class="content_mobile">
+					<div class="content_header">
+						<div class="download_title">That was easy</div>
+						<div class="download_vote star_recomend">
+							
+			<div class='rating-container rating-gly-star'>
+                <div class='rating-stars' data-content='' style='width:0%;'></div>
+                <input id='input-1' class='rating form-control hide' data-min='0' data-max='5' data-step='1' data-size='xs'   
+                     data-vote='0' data-uservoted="False" data-boardid="50462497">
+            </div>
+
+						</div>
+						<div class="content_details col-xs-10">
+							<span><strong>CATEGORY:</strong> <a href="/category/Games/">GAMES</a></span>
+							<span><strong>RIGHTS: </strong><a href="/how.aspx">PERSONAL</a></span>
+						</div>
+						
+						<br style="clear:both">
+						<div class="tags">
+							<a rel='external' href='https://www.soundboard.com/search.aspx?keyword=games'>games</a>
+						</div>
+						<div id="divTags">
+						</div>
+						<br style="clear:both">
+						<div class="download_sb_name">
+							  SoundBoard:  
+							<a href="/sb/LethalAcid1">My Soundboard</a>
+						</div>
+
+						 <div class="share_board">
+							Play "That was easy" Sound:<br/>
+						</div>
+						<div class="black-b">
+							<div id="jquery_jplayer_1"></div>
+							<div id="jp_container_1">
+								<a href="javascript:;" class="jp-play jp-playicon">
+									<span class="col-xs-1"><i class="glyphicon glyphicon-play"></i></span>
+								</a>
+								<a style="display: none" href="javascript:;" class="jp-pause jp-pauseicon" tabindex="1">
+									<span class="col-xs-1"><i class="glyphicon glyphicon-pause"></i></span>
+								</a>
+								<a href="javascript:;" class="jp-tepeat" tabindex="1" title="loop">
+								   <span class="col-xs-1 glyphicon glyphicon-repeat"></span>
+								</a> 
+								<a href="javascript:;" class="jp-tepeat-off" tabindex="1" title="loop off" style="display: none;">
+									<span class="col-xs-1 glyphicon glyphicon-repeat"></span>
+								</a>
+								<div class="col-xs-8 jp-progress">
+									<div class="jp-seek-bar">
+										<div class="jp-play-bar">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1  jp-time-holder">
+									<div class="jp-current-time">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="share_board">
+							Share "That was easy" Sound:<br/>
+							<ul class="share-buttons">
+							  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.soundboard.com%2fsb%2fdownload.aspx%3ftrackid%3d462497&t=That+was+easy+Sound+From+My+Soundboard" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="/images/social/Facebook.png"></a></li>
+							  <li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2fwww.soundboard.com%2fsb%2fdownload.aspx%3ftrackid%3d462497&text=That+was+easy+Sound+From+My+Soundboard:%20https%3a%2f%2fwww.soundboard.com%2fsb%2fdownload.aspx%3ftrackid%3d462497&via=soundboards" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="/images/social/Twitter.png"></a></li>
+							  <li><a href="https://plus.google.com/share?url=https%3a%2f%2fwww.soundboard.com%2fsb%2fdownload.aspx%3ftrackid%3d462497" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="/images/social/Google.png"></a></li>
+							  <li><a href="https://www.tumblr.com/share?v=3&u=https%3a%2f%2fwww.soundboard.com%2fsb%2fdownload.aspx%3ftrackid%3d462497&t=That+was+easy+Sound+From+My+Soundboard&s=" target="_blank" title="Post to Tumblr" onclick="window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&t=' +  encodeURIComponent(document.title)); return false;"><img src="/images/social/Tumblr.png"></a></li>
+							  <li><a href="https://www.reddit.com/submit?url=https%3a%2f%2fwww.soundboard.com%2fsb%2fdownload.aspx%3ftrackid%3d462497&title=That+was+easy+Sound+From+My+Soundboard" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="/images/social/Reddit.png"></a></li>
+							  <li><a href="/cdn-cgi/l/email-protection#556a2620373f30362168013d34217e2234267e3034262c7e063a203b317e13273a387e182c7e063a203b31373a34273173373a312c6813273c303b31263d212125267066347067337067332222227b263a203b31373a3427317b363a387067332637706733313a223b393a34317b3426252d706633212734363e3c31706631616367616c62" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="/images/social/Email.png"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="down_ban col-xs-12">
+						<div class="catd">
+							<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Soundboard - Content - Mid Responsive (Mobile_ContentMid_Resp) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5539969288371366"
+     data-ad-slot="8836297056"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+						</div>
+					</div>
+					
+					
+					<div class="content_header">
+						<div class="download_btn col-xs-12">
+							<input id="cboTracksForDownload" value=462497 style="visibility: hidden; height: 0"/>
+							<p>Download "That was easy" Sound:</p>
+							
+							
+							<button type="button" class="center-block btn btn-danger" id="btnDownload" onclick="location.href='https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=That+was+easy&filename=20/203258-f08bfd13-1d10-4b40-8877-fbb257943366.mp3';"><span class="glyphicon glyphicon-download-alt"></span> Download Sound</button>
+							
+							
+						</div>
+						<div class="back_board">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<a href="/sb/LethalAcid1">Back to My Soundboard</a>
+						</div>
+						
+						<div class="clear"></div>
+                        <hr class="content_hr">
+						
+						<hr class="content_hr">
+						
+							<div class="related_boards">
+								<h2>Related Boards: </h2>
+								<div class="border-list">
+							
+								<div class="item_boards col-xs-6">
+									<a href="/sb/timmy" title='Timmy Soundboard'>
+										<img width="50" height="50" src='https://www.soundboard.com/boardicon/timmy.jpg' />
+										<div class="sound_title">Timmy Soundboard</div>
+										<div class="sound_vote star">
+											
+			<div class='rating-container rating-gly-star'>
+                <div class='rating-stars' data-content='' style='width:0%;'></div>
+                <input id='input-1' class='rating form-control hide' data-min='0' data-max='5' data-step='1' data-size='xs'   
+                     data-vote='0' data-uservoted="False" data-boardid="0">
+            </div>
+
+										</div>
+										<div class="sb_tags">
+											<span class="star_label label label-default">16 Tracks</span>
+											<span class="star_label label label-default">302614 Views</span>
+										</div>
+									</a>
+
+								</div>
+							
+								<div class="item_boards col-xs-6">
+									<a href="/sb/thegodess" title='My Soundboard'>
+										<img width="50" height="50" src='https://www.soundboard.com/boardicon/thegodess.jpg' />
+										<div class="sound_title">My Soundboard</div>
+										<div class="sound_vote star">
+											
+			<div class='rating-container rating-gly-star'>
+                <div class='rating-stars' data-content='' style='width:0%;'></div>
+                <input id='input-1' class='rating form-control hide' data-min='0' data-max='5' data-step='1' data-size='xs'   
+                     data-vote='0' data-uservoted="False" data-boardid="0">
+            </div>
+
+										</div>
+										<div class="sb_tags">
+											<span class="star_label label label-default">1 Tracks</span>
+											<span class="star_label label label-default">9247 Views</span>
+										</div>
+									</a>
+
+								</div>
+							
+								<div class="item_boards col-xs-6">
+									<a href="/sb/Greys_Anatomy_TV_clips" title='Grey's Anatomy Soundboard'>
+										<img width="50" height="50" src='https://www.soundboard.com/boardicon/Greys_Anatomy_TV_clips.jpg' />
+										<div class="sound_title">Grey's Anatomy Soundboard</div>
+										<div class="sound_vote star">
+											
+			<div class='rating-container rating-gly-star'>
+                <div class='rating-stars' data-content='' style='width:0%;'></div>
+                <input id='input-1' class='rating form-control hide' data-min='0' data-max='5' data-step='1' data-size='xs'   
+                     data-vote='0' data-uservoted="False" data-boardid="0">
+            </div>
+
+										</div>
+										<div class="sb_tags">
+											<span class="star_label label label-default">17 Tracks</span>
+											<span class="star_label label label-default">36774 Views</span>
+										</div>
+									</a>
+
+								</div>
+							
+								<div class="item_boards col-xs-6">
+									<a href="/sb/air_brock" title='Aj's sounds'>
+										<img width="50" height="50" src='https://www.soundboard.com/boardicon/air_brock.jpg' />
+										<div class="sound_title">Aj's sounds</div>
+										<div class="sound_vote star">
+											
+			<div class='rating-container rating-gly-star'>
+                <div class='rating-stars' data-content='' style='width:0%;'></div>
+                <input id='input-1' class='rating form-control hide' data-min='0' data-max='5' data-step='1' data-size='xs'   
+                     data-vote='0' data-uservoted="False" data-boardid="0">
+            </div>
+
+										</div>
+										<div class="sb_tags">
+											<span class="star_label label label-default">28 Tracks</span>
+											<span class="star_label label label-default">6436 Views</span>
+										</div>
+									</a>
+
+								</div>
+							
+								</div>
+							</div>
+							
+						<div class="clear"></div>
+						<hr class="content_hr">
+						
+						<h1 class="comment_section">COMMENTS</h1>
+						<div id="disqus_thread"></div>
+						<noscript>
+							Please enable JavaScript to view the 
+							<a href="https://disqus.com/?ref_noscript" rel="nofollow">
+								comments powered by Disqus.
+							</a>
+						</noscript>
+					</div>
+				</div>
+            </div>
+			
+			<div class="col-xs-4 form-right">
+				<div class="catd right_top_ad">
+					
+				</div>
+                
+<h2>RECOMMENDED SOUNDBOARDS</h2>
+<div class="border-2 ">
+    
+            <div class="item_boards">
+                <a href="/sb/solrosin" title='Ultimate Duke Nukem Soundboard'>
+                    <img width="50" height="50" src='https://www.soundboard.com/boardicon/solrosin.jpg' />
+                    <div class="sound_title">Ultimate Duke Nukem Soundboard</div>
+                    <div class="sound_vote star_recomend">
+                        
+			<div class='rating-container rating-gly-star'>
+                <div class='rating-stars' data-content='' style='width:0%;'></div>
+                <input id='input-1' class='rating form-control hide' data-min='0' data-max='5' data-step='1' data-size='xs'   
+                     data-vote='97.5' data-uservoted="False" data-boardid="6532">
+            </div>
+
+                        <span class="star_label label label-default">58 Tracks</span>
+                    </div>
+                </a>
+                <div class="sound_description">
+					This is the ultimate Duke Nukem soundboard, with new stuff added as I find it.  All of the classic o...
+                </div>
+            </div>
+        
+            <div class="item_boards">
+                <a href="/sb/2016sounboard" title='dank memes'>
+                    <img width="50" height="50" src='https://www.soundboard.com/boardicon/2016sounboard.jpg' />
+                    <div class="sound_title">dank memes</div>
+                    <div class="sound_vote star_recomend">
+                        
+			<div class='rating-container rating-gly-star'>
+                <div class='rating-stars' data-content='' style='width:0%;'></div>
+                <input id='input-1' class='rating form-control hide' data-min='0' data-max='5' data-step='1' data-size='xs'   
+                     data-vote='99.84' data-uservoted="False" data-boardid="229358">
+            </div>
+
+                        <span class="star_label label label-default">462 Tracks</span>
+                    </div>
+                </a>
+                <div class="sound_description">
+					Yb Better + Ratio + Loud = funny bozos (Suggest sum stuff you would want me to upload in the comment...
+                </div>
+            </div>
+        
+            <div class="item_boards">
+                <a href="/sb/csgonshityeah" title='memes'>
+                    <img width="50" height="50" src='https://www.soundboard.com/boardicon/csgonshityeah.jpg' />
+                    <div class="sound_title">memes</div>
+                    <div class="sound_vote star_recomend">
+                        
+			<div class='rating-container rating-gly-star'>
+                <div class='rating-stars' data-content='' style='width:0%;'></div>
+                <input id='input-1' class='rating form-control hide' data-min='0' data-max='5' data-step='1' data-size='xs'   
+                     data-vote='99.77' data-uservoted="False" data-boardid="224470">
+            </div>
+
+                        <span class="star_label label label-default">35 Tracks</span>
+                    </div>
+                </a>
+                <div class="sound_description">
+					argaergerg...
+                </div>
+            </div>
+        
+            <div class="item_boards">
+                <a href="/sb/fart_sound" title='Ultimate Fart Soundboard'>
+                    <img width="50" height="50" src='https://www.soundboard.com/boardicon/fart_sound.jpg' />
+                    <div class="sound_title">Ultimate Fart Soundboard</div>
+                    <div class="sound_vote star_recomend">
+                        
+			<div class='rating-container rating-gly-star'>
+                <div class='rating-stars' data-content='' style='width:0%;'></div>
+                <input id='input-1' class='rating form-control hide' data-min='0' data-max='5' data-step='1' data-size='xs'   
+                     data-vote='59.64' data-uservoted="False" data-boardid="15261">
+            </div>
+
+                        <span class="star_label label label-default">36 Tracks</span>
+                    </div>
+                </a>
+                <div class="sound_description">
+					Did you fart? - No. Then which one is you? Every fart you can imagine is here... This Fart Soundboar...
+                </div>
+            </div>
+        
+            <div class="item_boards">
+                <a href="/sb/Star_Trek_Ringtones" title='Star Trek Ringtones'>
+                    <img width="50" height="50" src='https://www.soundboard.com/boardicon/Star_Trek_Ringtones.jpg' />
+                    <div class="sound_title">Star Trek Ringtones</div>
+                    <div class="sound_vote star_recomend">
+                        
+			<div class='rating-container rating-gly-star'>
+                <div class='rating-stars' data-content='' style='width:0%;'></div>
+                <input id='input-1' class='rating form-control hide' data-min='0' data-max='5' data-step='1' data-size='xs'   
+                     data-vote='0' data-uservoted="False" data-boardid="13583">
+            </div>
+
+                        <span class="star_label label label-default">63 Tracks</span>
+                    </div>
+                </a>
+                <div class="sound_description">
+					Beam your phone up with these great ringtones from the Star Trek tv series. Sound effects from the s...
+                </div>
+            </div>
+        
+</div>
+
+				
+			</div>
+			
+        </div>
+    </div>
+
+	
+	
+	
+	
+
+<section class="lower-body">
+    <div class="container">
+        <div class="first_line">
+            <div class="col-xs-3 sub-cat">
+                <h2>Build</h2>
+                <div class="lower-1">
+                    <a rel="external" href="https://www.soundboard.com/about.aspx"><span class="glyphicon glyphicon-menu-right"></span>Learn More</a>
+                    <a rel="external" href="https://www.soundboard.com/build.aspx"><span class="glyphicon glyphicon-menu-right"></span>How To...</a>
+                    <a rel="external" href="https://www.soundboard.com/register.aspx"><span class="glyphicon glyphicon-menu-right"></span>Register</a>
+                    <a rel="external" href="https://www.soundboard.com/software.aspx"><span class="glyphicon glyphicon-menu-right"></span>The Software</a>
+                    <a rel="external" href="https://www.soundboard.com/Sell.aspx"><span class="glyphicon glyphicon-menu-right"></span>Sell Your Sounds</a>
+                    <a rel="external" href="https://www.soundboard.com/board_share.aspx"><span class="glyphicon glyphicon-menu-right"></span>Board Share&#8482;</a>
+                    <a rel="external" href="https://www.soundboard.com/apps.aspx"><span class="glyphicon glyphicon-menu-right"></span>Recording App</a>
+                    <a rel="external" href="https://www.soundboard.com/login.aspx"><span class="glyphicon glyphicon-menu-right"></span>Login</a>
+                </div>
+            </div>
+            <div class="col-xs-3 sub-cat">
+                <h2>Discover</h2>
+                <div class="lower-1">
+                    <a rel="external" href="https://www.soundboard.com/category.aspx"><span class="glyphicon glyphicon-menu-right"></span>Categories</a>
+                    <a rel="external" href="https://www.soundboard.com/popular.aspx"><span class="glyphicon glyphicon-menu-right"></span>Most Popular</a>
+                    <a rel="external" href="https://www.soundboard.com/new.aspx"><span class="glyphicon glyphicon-menu-right"></span>Newest</a>
+                    <a rel="external" href="https://www.soundboard.com/apps.aspx"><span class="glyphicon glyphicon-menu-right"></span>Lifeboard</a>
+                </div>
+            </div>
+        </div>
+        <div class="second_line">
+            <div class="col-xs-3 sub-cat">
+                <h2>Browse</h2>
+                <div class="lower-1">
+                    
+                            <a href="https://www.soundboard.com/category/Science-Nature"><span class="glyphicon glyphicon-menu-right"></span>Animals/Nature</a>
+                        
+                            <a href="https://www.soundboard.com/category/Celebrities"><span class="glyphicon glyphicon-menu-right"></span>Celebrities</a>
+                        
+                            <a href="https://www.soundboard.com/category/Comedians"><span class="glyphicon glyphicon-menu-right"></span>Comedians</a>
+                        
+                            <a href="https://www.soundboard.com/category/Games"><span class="glyphicon glyphicon-menu-right"></span>Games</a>
+                        
+                            <a href="https://www.soundboard.com/category/Historical"><span class="glyphicon glyphicon-menu-right"></span>History</a>
+                        
+                            <a href="https://www.soundboard.com/category/Holidays"><span class="glyphicon glyphicon-menu-right"></span>Holidays</a>
+                        
+                            <a href="https://www.soundboard.com/category/Media"><span class="glyphicon glyphicon-menu-right"></span>Media</a>
+                        
+                            <a href="https://www.soundboard.com/category/Misc"><span class="glyphicon glyphicon-menu-right"></span>Misc.</a>
+                        
+                            <a href="https://www.soundboard.com/category/Movies"><span class="glyphicon glyphicon-menu-right"></span>Movies</a>
+                        
+                            <a href="https://www.soundboard.com/category/MyMusic"><span class="glyphicon glyphicon-menu-right"></span>My Music</a>
+                        
+                            <a href="https://www.soundboard.com/category/Other"><span class="glyphicon glyphicon-menu-right"></span>Other</a>
+                        
+                            <a href="https://www.soundboard.com/category/Personal"><span class="glyphicon glyphicon-menu-right"></span>Personal</a>
+                        
+                            <a href="https://www.soundboard.com/category/Podcasts"><span class="glyphicon glyphicon-menu-right"></span>Podcasts</a>
+                        
+                            <a href="https://www.soundboard.com/category/Political"><span class="glyphicon glyphicon-menu-right"></span>Politics</a>
+                        
+                            <a href="https://www.soundboard.com/category/PrankCalls"><span class="glyphicon glyphicon-menu-right"></span>Prank Calls</a>
+                        
+                            <a href="https://www.soundboard.com/category/Radio"><span class="glyphicon glyphicon-menu-right"></span>Radio</a>
+                        
+                            <a href="https://www.soundboard.com/category/Sound-Effects"><span class="glyphicon glyphicon-menu-right"></span>Sound FX</a>
+                        
+                            <a href="https://www.soundboard.com/category/Sports"><span class="glyphicon glyphicon-menu-right"></span>Sports</a>
+                        
+                            <a href="https://www.soundboard.com/category/Television"><span class="glyphicon glyphicon-menu-right"></span>Television</a>
+                        
+                            <a href="https://www.soundboard.com/category/Travel-Intl"><span class="glyphicon glyphicon-menu-right"></span>Travel/Int'l</a>
+                        
+                </div>
+            </div>
+            <div class="col-xs-3 sub-cat">
+                <h2>Resources</h2>
+                <div class="lower-1">
+                    <a rel="external" href="https://www.soundboard.com/software.aspx"><span class="glyphicon glyphicon-menu-right"></span>The Software</a>
+                    <a rel="external" href="https://www.soundboard.com/how.aspx"><span class="glyphicon glyphicon-menu-right"></span>How it Works</a>
+                    <a rel="external" href="https://www.soundboard.com/faq.aspx"><span class="glyphicon glyphicon-menu-right"></span>FAQs</a>
+                    <a rel="external" href="https://www.soundboard.com/about_us.aspx"><span class="glyphicon glyphicon-menu-right"></span>About Us</a>
+                    <a rel="external" href="https://www.soundboard.com/mission.aspx"><span class="glyphicon glyphicon-menu-right"></span>Our Mission</a>
+                    <a rel="external" href="https://www.soundboard.com/access.aspx"><span class="glyphicon glyphicon-menu-right"></span>Make Ringtones</a>
+                    <a rel="external" href="https://www.soundboard.com/sitemap.aspx"><span class="glyphicon glyphicon-menu-right"></span>Site Map</a>
+                    <a rel="external" href="https://www.soundboard.com/contact.aspx"><span class="glyphicon glyphicon-menu-right"></span>Contact</a>
+                    <a rel="external" href="https://www.soundboard.com/terms.aspx"><span class="glyphicon glyphicon-menu-right"></span>Terms of Usage</a>
+                    <a rel="external" href="https://www.soundboard.com/privacy.aspx"><span class="glyphicon glyphicon-menu-right"></span>Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <!--<div class="col-xs-12"></div>-->
+    </div>
+    <br />
+</section>
+
+<div class="wrapper">
+    <footer class="footer">
+        <div class="cmpny">
+            <div class="container">
+                <div class="pgf">
+                    <p>&copy; 2015<strong> soundboard.</strong>  All Rights Reserved.</p>
+                    <p style="font-size: 12px; font-weight: 400;">Page Generated On: 1:08:12 AM</p>
+                </div>
+                <div class="inner-img">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+	<div class="modal hid fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title">Message from SoundBoard!</h4>
+				</div>
+				<div class="modal-body">
+					<p id="myModal_message"></p>
+				</div>
+				<div class="modal-footer"><a href="#" class="button" data-dismiss="modal">Close</a></div>
+			</div>
+		</div>
+	</div>
+    <div class="side_out">
+        <span class="glyphicon glyphicon-remove"></span>
+        <ul class="list_menu">
+            <li><a class="menuheader_old" href="/">Home</a></li>
+			
+            <li><a class="menuheader_old" href="/popular.aspx">Popular</a></li>
+            <li><a class="menuheader_old" href="/new.aspx">New</a></li>
+            <li><a class="menuheader contains">Categories <span class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="menuitem">
+                    
+                            <li><a href="https://www.soundboard.com/category/Science-Nature">Animals/Nature</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Celebrities">Celebrities</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Comedians">Comedians</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Games">Games</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Historical">History</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Holidays">Holidays</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Media">Media</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Misc">Misc.</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Movies">Movies</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/MyMusic">My Music</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Other">Other</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Personal">Personal</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Podcasts">Podcasts</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Political">Politics</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/PrankCalls">Prank Calls</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Radio">Radio</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Sound-Effects">Sound FX</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Sports">Sports</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Television">Television</a></li>
+                        
+                            <li><a href="https://www.soundboard.com/category/Travel-Intl">Travel/Int'l</a></li>
+                        
+                </ul>
+            </li>
+            <li><a class="menuheader" href="/account/addboard.aspx">Create</a></li>
+            <li><a class="menuheader_old contains">Build<span class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="menuitem">
+                    <li><a href="/about.aspx">Learn More</a></li>
+                    <li><a href="/register.aspx">Join Now</a></li>
+                    <li><a href="/software.aspx">Desktop Builder</a></li>
+                    <li><a href="/Sell.aspx">Sell Your Sound</a></li>
+                    <li><a href="/build.aspx">How To ...</a></li>
+                    <li><a href="/board_share.aspx">Board Share</a></li>
+                </ul>
+            </li>
+            <li>
+				<a class="menuheader_old contains">Apps<span class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="menuitem">
+                    <li><a href="/apps.aspx">Recorder</a></li>
+                    <li><a href="/apps.aspx">Life Board</a></li>
+                </ul>
+            </li>
+            <li class="nav-last"><a class="menuheader_old contains">Resources<span class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="menuitem last">
+                    <li><a href="/faq.aspx">FAQs</a></li>
+                    <li><a href="/how.aspx">How it Work</a></li>
+                    <li><a href="/about_us.aspx">About Us</a></li>
+                    <li><a href="/mission.aspx">Our Mission</a></li>
+                    <li><a href="/contact.aspx">Contact Us</a></li>
+                </ul>
+            </li>
+			
+            <li><a class="menuheader" href="https://www.soundboard.com/login.aspx">Login</a></li>
+			
+        </ul>
+    </div>
+	</form>
+    </div>	
+    <link href="/js/bootstrap-star-rating/css/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
+	
+<script type="text/javascript" id="mbscript">
+$script.ready('bundle', function() {
+	$script.ready('voting', function() {
+		$(document).ready(function() {
+			// --- Vote Rating
+			var $vote_input = $('.download_vote input.rating');
+
+			if ($vote_input.length) {
+				$vote_input.removeClass('rating-loading').addClass('rating-loading').rating();
+			}
+			
+			
+			
+				$vote_input.rating('refresh', {showClear:false, disabled:true, showCaption:false});
+				$vote_input.each(function() {
+					var vote = $(this).data('vote');
+					$(this).prev().css('width', vote + '%');
+				});
+			
+		
+			$('.rating-stars').each(function() {
+				$(this).click(function() {
+					var rate = ($(this).css('width').match(/\d+/) / $(this).parent().css('width').match(/\d+/)) * 100 / 20;
+					var vboardId = $(this).next().data('boardid');
+					var userId = 206273;
+					var dataObj = { 'vote': Math.round(rate), 'boardId': vboardId, 'userId': userId };
+					var self = $(this);
+					$.post('https://www.soundboard.com/VotingService.asmx/Voting', dataObj).done(function(result) {
+						var data = $.parseJSON(result.documentElement.innerHTML);
+							self.next().rating('refresh', { showClear: false, disabled: true, showCaption: false });
+							self.css("width", data._Vote + "%");
+					});
+					return false;
+				});
+			}); 
+
+			$(".star-rating.rating-xs.rating-active .caption span").each(function() {
+				var vote = $(this).parent().prev().find('input').data('vote');
+
+				if (vote > 0 && vote <= 20) {
+					$(this).removeClass('label-default');
+					$(this).addClass('label-danger');
+				}
+				if (vote > 20 && vote <= 40){
+					$(this).removeClass('label-default');
+					$(this).addClass('label-warning');
+				}
+				if (vote > 40 && vote <= 60){
+					$(this).removeClass('label-default');
+					$(this).addClass('label-info');
+				}
+				if (vote > 60 && vote <= 80){
+					$(this).removeClass('label-default');
+					$(this).addClass('label-primary');
+				}
+				if (vote > 80 && vote <= 100){
+					$(this).removeClass('label-default');
+					$(this).addClass('label-success');
+				}
+			});
+
+			$(".star-rating.rating-xs.rating-active .rating-stars").each(function () {
+				var vote = $(this).next().data('vote');
+				var userVoted = $(this).next().data('uservoted');
+				if (userVoted == "True") {
+					$(this).next().rating('refresh', { showClear: false, disabled: true, showCaption: false });
+					$(this).css('width', vote + '%');
+				} else {
+					$(this).css('width', vote + '%');
+					$(this).next().rating('update', vote / 20);
+				}
+			});	
+		});
+	});
+});
+
+
+</script>
+<script>
+	/**
+	* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+	* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+	*/
+
+	var disqus_config = function () {
+		this.page.url = "https://www.soundboard.com/sb/LethalAcid1"; // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = "LethalAcid1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	};
+
+	(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+
+		s.src = '//soundboardcom.disqus.com/embed.js';
+
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+<script id="dsq-count-scr" src="//soundboardcom.disqus.com/embed.js" async></script>
+
+	<script>
+		$(document).ready(function() {
+			 
+					$('.create, .side_out .glyphicon-remove').click(function() {
+						if (!$(".create").hasClass("open")) {
+							$(".create").addClass("open");
+							$("#wrapper_body").animate({ right: "20%" });
+							$(".side_out").animate({ right: "0" });
+						} else {
+							$("#wrapper_body").animate({ right: "0" });
+							$(".side_out").animate({ right: "-20%" });
+							$(".create").removeClass("open");
+						}
+					});
+					
+					$('.categorylink').click(function(e){
+						$('.togglemenu').slideToggle();
+						if ($(".catlinkicon").hasClass("glyphicon-menu-up")) {
+							$('.catlinkicon').removeClass("glyphicon-menu-up");
+							$('.catlinkicon').addClass("glyphicon-menu-down");
+						} else {
+							$('.catlinkicon').removeClass("glyphicon-menu-down");
+							$('.catlinkicon').addClass("glyphicon-menu-up");
+						}
+					});
+			
+			
+		});
+	</script>
+	<style>
+		.rating-disabled {cursor:default}
+		.rating-container .rating-stars:before {
+			text-shadow: none;
+		}
+	</style>
+</body>
+</html>

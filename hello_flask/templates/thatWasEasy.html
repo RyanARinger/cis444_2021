@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
  
+<style>
+	 h1{
+                font-family: Impact, Charcoal, sans-serif;
+		position: center;
+	}
+</style>
 <head>
     <title>
         DOM Audio play( ) Method
@@ -10,21 +16,20 @@
 <body style="text-align:center">
  
     <br>
-    <audio id="idAudio">
-	    <source src="static/thatwaseasy.mp3"
+    <audio id="theStaplesButton">
+	    <source src="static/that_was_easy.mp3"
                 type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
  
      
-<p>To play the Audio, click the "Play Audio" button.</p>
+    <h1>When you submit your assignment<br/> 
+	    0.001 seconds before it is due</h1>
  
- 
-    <button onclick="play_Audio()" type="button">Play Audio</button>
-    <button onclick="pause_Audio()" type="button">Pause Audio</button>
+<button onclick="play_Audio()" type="button"><img src="{{img_url}}/easy_button.jpg"></button>
  
     <script>
-        var GFG = document.getElementById("idAudio");
+        var GFG = document.getElementById("theStaplesButton");
  
         function play_Audio() {
             GFG.play();

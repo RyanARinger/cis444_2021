@@ -47,7 +47,8 @@ def auth():
 #Assigment 2
 @app.route('/ss1') #endpoint
 def ss1():
-    return render_template('server_time.html', server_time= str(datetime.datetime.now()) )
+    return render_template('server_time.html', server_time= str(datetime.datetime.now()), img_url=IMGS_URL[CUR_ENV] )
+    #return render_template('server_time.html', img_url=IMGS_URL[CUR_ENV] )
 
 @app.route('/getTime') #endpoint
 def get_time():
@@ -60,6 +61,10 @@ def get_time():
 def get_client_time():
     return render_template('client_time.html', img_url=IMGS_URL[CUR_ENV])
 
+
+@app.route('/easy') #endpoint
+def twe():
+    return render_template('thatWasEasy.html', img_url=IMGS_URL[CUR_ENV])
 
 app.run(host='0.0.0.0', port=80)
 

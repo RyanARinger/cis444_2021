@@ -5,6 +5,7 @@ import jwt
 
 import datetime
 
+from db_con import get_db_instance, get_db
 
 app = Flask(__name__)
 FlaskJSON(app)
@@ -22,6 +23,9 @@ CUR_ENV = "DEV"
 JWT_SECRET = None
 with open("mysecret", "r") as f:
     JWT_SECRET = f.read()
+
+global_db_con = get_db()
+
 
 @app.route('/') #endpoint
 def index():
@@ -87,6 +91,12 @@ def exposejwt():
     return json_response(output = jwt.decode(jwt_token, JWT_SECRET, algorithms=["HS256"]))
 
 
+@app.route('/hellodb') #endpoint
+def hellodb():
+    cur = global_db_con.cursor()
+    cur.execute("select 5+5, 1+1")
+    first, second = cur.fetchone()
+    return json_response(a=first, b=second)
 
 app.run(host='0.0.0.0', port=80)
 

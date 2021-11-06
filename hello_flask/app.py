@@ -1,10 +1,11 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,jsonify
 from flask_json import FlaskJSON, JsonError, json_response, as_json
 import jwt
 
 import datetime
 import bcrypt
 
+import json
 
 from db_con import get_db_instance, get_db
 
@@ -19,7 +20,7 @@ IMGS_URL = {
             "PRD" : "http://d2cbuxq67vowa3.cloudfront.net/images"
             }
 
-CUR_ENV = "PRD"
+CUR_ENV = "DEV"
 JWT_SECRET = None
 
 global_db_con = get_db()
@@ -48,7 +49,7 @@ def back():
 @app.route('/backp',  methods=['POST']) #endpoint
 def backp():
     print(request.form)
-    salted = bcrypt.hashpw( bytes(request.form['fname'],  'utf-8' ) , bcrypt.gensalt(10))
+    salted = bcrypt.hashpw( bytes(request.form['fname'],  'utf-8' ) , bcrypt.gensalt(12))
     print(salted)
 
     print(  bcrypt.checkpw(  bytes(request.form['fname'],  'utf-8' )  , salted ))
@@ -70,11 +71,12 @@ def ss1():
 
 @app.route('/getTime') #endpoint
 def get_time():
-    return json_response(data={"password" : request.args.get('password'),
-                                "class" : "cis44",
-                                "serverTime":str(datetime.datetime.now())
-                            }
-                )
+    #return json_response(data={"password" : request.args.get('password'),
+    #                           "class" : "cis44",
+    #                          "serverTime":str(datetime.datetime.now())
+    #                     }
+    #        )
+    return render_template('client_time.html', server_time= str(datetime.datetime.now()), img_url=IMGS_URL[CUR_ENV] )
 
 @app.route('/auth2') #endpoint
 def auth2():
@@ -103,6 +105,60 @@ def hellodb():
 @app.route('/easy') #endpoint
 def twe():
     return render_template('thatWasEasy.html', img_url=IMGS_URL[CUR_ENV])
+
+
+#assignment 3
+@app.route('/authUser', methods=['POST']) #endpoint
+def authUser():
+    
+    cur = global_db_con.cursor()
+    username = request.form['uname']
+    validUser = False
+    isLind = "False" #I promised my friend a birthday message
+
+    cur.execute("select password from users where username = '{}'".format(username))
+    for item in cur.fetchall():
+        if bcrypt.checkpw(  bytes(request.form['pword'],'utf-8' )  , bytes(item[0], 'utf-8')):
+            validUser = True
+    
+    if validUser:
+        if username == "Lindsey":
+            isLind = "True"
+            print(isLind)
+        jwt_str = jwt.encode({"username" : username}, JWT_SECRET, algorithm="HS256")
+        return json_response(jwt=jwt_str, lind=isLind)
+    else:
+        return json_response(jwt='BadRequest')
+
+@app.route('/bookStore') #endpoint
+def bookStore():
+    return render_template('login_buy_confirm.html', img_url=IMGS_URL[CUR_ENV])
+
+@app.route('/makeUser', methods=['POST']) #endpoint
+def makeUser():
+
+    cur = global_db_con.cursor()
+    
+    salted = bcrypt.hashpw( bytes(request.form['pword'],  'utf-8' ) , bcrypt.gensalt(12))
+    username = request.form['uname'] 
+    cur.execute("insert into users (username, password) values ('{}','{}')".format(username, salted.decode("utf-8")))
+        
+    global_db_con.commit()
+
+    cur.execute("select password from users where username = '{}'".format(username))
+    for item in cur.fetchall():
+        print(item[0])
+        print(  bcrypt.checkpw(  bytes(request.form['pword'],  'utf-8' )  , bytes(item[0], 'utf-8') ))  
+    return "User Added"
+
+@app.route('/getBooks', methods=['GET']) #endpoint
+def getBooks():
+
+    cur = global_db_con.cursor()
+
+    cur.execute("select title, price from book") 
+
+    return json_response(bookList=cur.fetchall())
 
 app.run(host='0.0.0.0', port=80)
 

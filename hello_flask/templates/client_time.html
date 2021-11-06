@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 	<style>
 	body {
   		background-repeat: no-repeat;
@@ -17,34 +16,15 @@
 
 	}
 	</style>
-=======
-	 <style>
-body {
-  background-image: url('example_img_girl.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-h1{
-	background-color: #5F7DA2;
-	color: black;
-	font-family: Impact, Charcoal, sans-serif;
-	position: absolute;
-	top: 40px;
-	left: 40px;
-
-}
-</style>
->>>>>>> 1e808fdf2545ee096a12772117dff75fdd0c0aaf
     <head>
         <!-- head definitions go here -->
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     </head>
-    <body style="background-image: url('/static/half-dome.jpg')">
+    <body style="background-image: url('{{img_url}}/half-dome.jpg')">
     <body>
 	    <h1 id="mytime"></h1>
 	<script>
-		setInterval( function(){ $('#mytime').html( "Time is " + new Date());}, 500);
+		setInterval( function(){ $('#mytime').html(new Date());}, 500);
 	</script>
     </body>
 </html>

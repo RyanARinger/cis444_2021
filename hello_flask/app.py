@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 from flask import Flask,render_template,request,jsonify
-=======
 from flask import Flask,render_template,request,send_from_directory
->>>>>>> 1e808fdf2545ee096a12772117dff75fdd0c0aaf
 from flask_json import FlaskJSON, JsonError, json_response, as_json
 import jwt
 
@@ -29,7 +26,6 @@ IMGS_URL = {
             }
 
 CUR_ENV = "DEV"
-<<<<<<< HEAD
 JWT_SECRET = None
 
 global_db_con = get_db()
@@ -37,7 +33,6 @@ global_db_con = get_db()
 
 with open("secret", "r") as f:
     JWT_SECRET = f.read()
-=======
 
 JWT_SECRET = None
 with open("mysecret", "r") as f:
@@ -45,7 +40,6 @@ with open("mysecret", "r") as f:
 
 global_db_con = get_db()
 
->>>>>>> 1e808fdf2545ee096a12772117dff75fdd0c0aaf
 
 @app.route('/') #endpoint
 def index():
@@ -89,7 +83,6 @@ def ss1():
 
 @app.route('/getTime') #endpoint
 def get_time():
-<<<<<<< HEAD
     #return json_response(data={"password" : request.args.get('password'),
     #                           "class" : "cis44",
     #                          "serverTime":str(datetime.datetime.now())
@@ -119,7 +112,6 @@ def hellodb():
     cur.execute("insert into music values( 'dsjfkjdkf', 1);")
     global_db_con.commit()
     return json_response(status="good")
-=======
     return json_response(data={"password" : request.args.get('password'),
                                 "class" : "cis44",
                                 "serverTime":str(datetime.datetime.now())})
@@ -127,7 +119,6 @@ def hellodb():
 @app.route('/getClientTime') #endpoint
 def get_client_time():
     return render_template('client_time.html', img_url=IMGS_URL[CUR_ENV])
->>>>>>> 1e808fdf2545ee096a12772117dff75fdd0c0aaf
 
 
 @app.route('/easy') #endpoint
@@ -153,7 +144,7 @@ def authUser():
     if validUser:
         if username == "Lindsey":
             isLind = "True"
-            print(isLind)
+            #print(isLind)
         jwt_str = jwt.encode({"username" : username}, JWT_SECRET, algorithm="HS256")
         return json_response(jwt=jwt_str, lind=isLind)
     else:
@@ -175,9 +166,9 @@ def makeUser():
     global_db_con.commit()
 
     cur.execute("select password from users where username = '{}'".format(username))
-    for item in cur.fetchall():
-        print(item[0])
-        print(  bcrypt.checkpw(  bytes(request.form['pword'],  'utf-8' )  , bytes(item[0], 'utf-8') ))  
+    #for item in cur.fetchall():
+        #print(item[0])
+        #print(  bcrypt.checkpw(  bytes(request.form['pword'],  'utf-8' )  , bytes(item[0], 'utf-8') ))  
     return "User Added"
 
 @app.route('/getBooks', methods=['GET']) #endpoint
@@ -188,28 +179,6 @@ def getBooks():
     cur.execute("select title, price from book") 
 
     return json_response(bookList=cur.fetchall())
-=======
-
-@app.route('/auth2') #endpoint
-def auth2():
-    jwt_str = jwt.encode({"username" : "Ryan", "age" : "twenty-three"}, JWT_SECRET, algorithm="HS256")
-    #print(request.form['username'])
-    return json_response(jwt=jwt_str)
-
-
-@app.route('/exposejwt') #endpoint
-def exposejwt():
-    jwt_token = request.args.get('jwt')
-    return json_response(output = jwt.decode(jwt_token, JWT_SECRET, algorithms=["HS256"]))
-
-
-@app.route('/hellodb') #endpoint
-def hellodb():
-    cur = global_db_con.cursor()
-    cur.execute("select 5+5, 1+1")
-    first, second = cur.fetchone()
-    return json_response(a=first, b=second)
->>>>>>> 1e808fdf2545ee096a12772117dff75fdd0c0aaf
 
 app.run(host='0.0.0.0', port=80)
 

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<style>
+		body{
+			background-color: DarkGray;
+			font-family: Verdana, sans-serif;
+		}
+		h1,h2,h3{
+			color: White;
+			background: linear-gradient(90deg, DarkGray 20%, DodgerBlue 50%, DarkGray 80%);
+		}
+		h1{
+			font-size:50px;
+		}
+		h2{
+			font-size:30px;
+		}
+		.fill {
+  			font-size: 20px;
+  			font-weight: 200;
+  			letter-spacing: 1px;
+			padding: 13px 50px 13px;
+  			outline: 0;
+  			border: 1px solid White;
+  			cursor: pointer;
+  			position: relative;
+  			background-color: rgba(0, 0, 0, 0);
+			color: White;
+		}
+
+		.fill::after {
+  			content: "";
+  			background-color: DodgerBlue;
+  			width: 100%;
+  			z-index: -1;
+  			position: absolute;
+  			height: 100%;
+  			top: 7px;
+  			left: 7px;
+  			transition: 0.2s;
+		}
+		.fill:hover::after {
+  			top: 0px;
+  			left: 0px;
+		}
+		table, th, td {
+			font-size: 50px;
+ 			border: 1px solid DodgerBlue;
+			color: White;
+		}
+		.txt, .lbl{
+			font-size: 30px;
+		}
+		.lbl{
+			color: white;
+		}
+		ul {list-style-type: none;}
+		body {font-family: Verdana, sans-serif;}
+
+		/* Month header */
+		.month {
+		  padding: 70px 25px;
+		  width: 100%;
+		  background: DodgerBlue;
+		  text-align: center;
+		  background: linear-gradient(90deg, DarkGray 20%, DodgerBlue 50%, DarkGray 80%);
+		}
+
+		/* Month list */
+		.month ul {
+		  margin: 0;
+		  padding: 0;
+		}
+
+		.month ul li {
+		  color: white;
+		  font-size: 20px;
+		  text-transform: uppercase;
+		  letter-spacing: 3px;
+		}
+
+		/* Previous button inside month header */
+		.month .prev {
+		  float: left;
+		  padding-top: 10px;
+		}
+
+		/* Next button */
+		.month .next {
+		  float: right;
+		  padding-top: 10px;
+		}
+
+		/* Weekdays (Mon-Sun) */
+		.weekdays {
+		  margin: 0;
+		  padding: 10px 0;
+		  background-color:#ddd;
+		}
+
+		.weekdays li {
+		  display: inline-block;
+		  width: 13.6%;
+		  color: #666;
+		  text-align: center;
+		}
+
+		/* Days (1-31) */
+		.days {
+		  padding: 10px 0;
+		  background: #eee;
+		  margin: 0;
+		}
+
+		.days li {
+		  list-style-type: none;
+		  display: inline-block;
+		  width: 13.6%;
+		  text-align: center;
+		  margin-bottom: 5px;
+		  font-size:12px;
+		  color: #777;
+		}
+
+		/* Highlight the "current" day */
+		.days li .active {
+		  padding: 5px;
+		  background: #1abc9c;
+		  color: white !important
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </head>
+
+    	<body>
+		<script>
+			 function checkAuth(){
+                                if($('#uname').val().length == 0 || $('#pword').val().length == 0){
+                                        alert("Error name fields must be filled");
+                                        return false;
+                                }
+                                else{
+                                        var uname = document.getElementById("uname").value;
+                                        var pword = document.getElementById("pword").value;
+
+
+                                        $.post('/open_api/authUser', {
+
+                                                uname : uname,
+                                                pword : pword
+
+                                        }, function(data, status){
+                                                if(data.jwt != 'BadRequest'){
+                                                        $('#login').hide();
+                                                        $('#menu').show();
+                                                }
+                                                else{
+                                                        alert("Bad Credentials");
+                                                }
+                                        }, 'json');
+
+                                        return false;
+                                }
+			 }
+
+			function populateTodo(){
+
+                                $.get('/open_api/getTodo', function (data){
+					for (let i = 0; i < data.todoList.length; i++) {
+                                        $('#todoTable').append('<tr><td>' + data.todoList[i][0] + '</td><td>' + data.todoList[i][1] + '</td><td>' + data.todoList[i][2] + '</td></tr>');
+					}
+                                }, 'json');
+				$('#todo').append('<button type="button" class="fill" >Make Changes</button></br></br>');
+				$('#menu').hide();
+                                $('#todo').show();
+                        }
+			function showCal(){
+				$('#menu').hide();
+				$('#cal').show();
+			}
+		</script>
+	  <center>
+        	<h1>Ryan's Organizational Hub</h1>
+
+		<div id ="login">
+			<h2>Is your life falling out around you? Mine too. Let's try to fix that.</h2>
+                	<form action="/authUser" method="post"> 
+                        	<label class="lbl" for="uname">Username:</label><br>
+                                	<input class="txt" type="text" id="uname" name="uname"><br>
+                                <label class="lbl" for="pword">Password:</label><br>
+                                                <input class="txt" type="password" id="pword" name="pword"><br>
+				<button type="submit" class="fill" onclick="return checkAuth();">Login</button>
+				<button type="submit" class="fill" onclick="return promptForNewUser();">New User</button>
+                        </form>
+                </div>
+                <div id ="createUser" style="display:none;">
+                        <form action="open_api/makeUser" method="post">
+                                <label class="lbl" for="uname">Username:</label><br>
+                                        <input class="txt" ype="text" id="cuname" name="cuname"><br>
+                                <label class="lbl" for="pword">Password:</label><br>
+                                        <input class="txt" type="password" id="cpword" name="cpword"><br>
+				<button type="submit" class="fill" onclick="return check_create_form();">Create User</button>
+                                </form>
+                </div>
+		<div class="pageDivs" id="menu" style="display:none;">
+			<h3>Below are a set of tools that may halp you in creating a new organizational paradigm</br>
+			        in your life. Ryan's Organizational Hub is not responsible for any horrible disasters,</br>
+			        loss of employment, loss of income, or loss of hair while using the system.</h3>
+
+			<button type="button" class="fill" onclick="return showCal();">Calendar</button></br></br>
+                        <button type="button" class="fill" onclick="return populateTodo();" >To-Do List</button></br></br>
+                        <button type="button" class="fill">Necessary Files</button></br></br>
+			<a href="/open_api/bookstore" type="button" class="fill">Textbooks (Royal Flush Bookstore)</a></br></br>
+		
+                </div>
+		 <div id="userCreated" style="display:none;">
+                        <h2>User Created</h2>
+                        <button type="submit" class="fill" value="Return to Login" onclick="return refreshPage();">Return to login</button>
+
+                </div>
+		 <div id="todo" style="display:none;">
+			<h2>To-Do List</h2>
+                        <table id="todoTable">
+                                <tr>
+                                        <th>Date</th>
+                                        <th>Title</th>
+                                        <th>Done?</th>
+
+                                </tr>
+
+                        </table>
+                </div>
+		<div id="cal" style="display:none">
+		<div class="month">
+  			<ul>
+    				<li class="prev">&#10094;</li>
+    				<li class="next">&#10095;</li>
+    				<li>December<br><span style="font-size:18px">2021</span></li>
+  			</ul>
+		</div>
+
+		<ul class="weekdays">
+			<li>Mo</li>
+ 			<li>Tu</li>
+  			<li>We</li>
+  			<li>Th</li>
+  			<li>Fr</li>
+  			<li>Sa</li>
+  			<li>Su</li>
+		</ul>
+
+		<ul class="days">
+  			<li>1</li>
+  			<li>2</li>
+  			<li>3</li>
+  			<li>4</li>
+  			<li>5</li>
+  			<li>6</li>
+  			<li>7</li>
+  			<li>8</li>
+  			<li>9</li>
+  			<li>10</li>
+			<li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+			<li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+  
+		</ul>
+		</div>
+	  </center>
+    	</body>
+    <p>Copyright Ryan Ringer 2021</p>
+</html>

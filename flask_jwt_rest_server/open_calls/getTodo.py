@@ -10,15 +10,15 @@ import bcrypt
 
 import json
 
-from db_con import get_db_instance, get_db
+from db_con_2 import get_db_instance, get_db
 
-from db_con import get_db_instance, get_db
+from db_con_2 import get_db_instance, get_db
 
 global_db_con = get_db()
 
 def handle_request():
     cur = global_db_con.cursor()
 
-    cur.execute("select title, price from book")
+    cur.execute("select * from todo")
 
-    return json_response(bookList=cur.fetchall())
+    return json_response(todoList=cur.fetchall())

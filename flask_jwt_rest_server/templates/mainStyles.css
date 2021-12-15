@@ -1,0 +1,11 @@
+table, th, td {
+	border:1px solid white;
+}
+
+body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        color: White;
+        font-size: 175%;
+}

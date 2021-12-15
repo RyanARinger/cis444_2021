@@ -6,19 +6,25 @@
 		}
 
 		body {
+			background-image: url('{{img_url}}/royal_flush.jpg');
                 	background-repeat: no-repeat;
                 	background-attachment: fixed;
 			background-size: cover;
 			color: White;
 			font-size: 175%;
+
         	}
 	</style>
-        <head>
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+
+        <head>
+	<meta charset="utf-8">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	
 	</head>
 
-	<body style="background-image: url('{{img_url}}/royal_flush.jpg')">
+	<body>
 		<script>
                         function check_create_form(){
                                 //alert($('#fname').val());
@@ -32,7 +38,7 @@
 					var cuname = document.getElementById("cuname").value;
 					var cpword = document.getElementById("cpword").value;
 
-					$.post('/makeUser', {
+					$.post('/open_api/makeUser', {
 						uname : cuname, 
 						pword : cpword
 					}, function(data, status){
@@ -59,7 +65,7 @@
                                         var pword = document.getElementById("pword").value;
 
 
-                                        $.post('/authUser', {
+                                        $.post('/open_api/authUser', {
                                                 
 						uname : uname,
                                                 pword : pword
@@ -90,7 +96,7 @@
 			}
 			function populateBooks(){
 				
-				$.get('/getBooks', function (data){
+				$.get('/open_api/getBooks', function (data){
 					for (let i = 0; i < data.bookList.length; i++) {
  						//$('#bookTable').append('<label for="book' + i + '">Title: ' + data.bookList[i][0] + ', Price: ' + data.bookList[i][1] + ' </label>');	
 						//$('#bookTable').append('<input type="checkbox" id="book' + i + '" name="book' + i +'" value="Bike"><br>');
@@ -104,7 +110,7 @@
 				$('#books').hide();
                                 $('#purchasedBooks').show();
 				
-				$.get('/getBooks', function (data){
+				$.get('/open_api/getBooks', function (data){
 					var inputElements = document.getElementsByClassName('buyBox');
 					for(let i=0; i < inputElements.length; i++){
 						if(inputElements[i].checked){

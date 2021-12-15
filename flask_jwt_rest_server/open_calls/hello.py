@@ -1,3 +1,3 @@
 def handle_request():
-        return ["hello"]
+    return "Hello"
 

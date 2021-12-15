@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		table, th, td {
+  			border:1px solid white;
+		}
+
+		body {
+                	background-repeat: no-repeat;
+                	background-attachment: fixed;
+			background-size: cover;
+			color: White;
+			font-size: 175%;
+        	}
+	</style>
+        <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body style="background-image: url('royal_flush.jpg')">
+		<script>
+                        function check_create_form(){
+                                //alert($('#fname').val());
+                                //alert($('#lname').val());
+
+                                if($('#cuname').val().length == 0 || $('#cpword').val().length == 0){
+                                        alert("Error name fields must be filled");
+                                        return false;
+                                }
+                                else{
+					var cuname = document.getElementById("cuname").value;
+					var cpword = document.getElementById("cpword").value;
+
+					$.post('/makeUser', {
+						uname : cuname, 
+						pword : cpword
+					}, function(data, status){
+					}, 'json');
+					
+					
+                                        $('#userCreated').show();
+
+					return false;
+                                }
+                      	}
+			function promptForNewUser(){
+					$('#login').hide();
+                        		$('#createUser').show();
+					return false;
+			}
+			function checkAuth(){
+				if($('#uname').val().length == 0 || $('#pword').val().length == 0){
+                                        alert("Error name fields must be filled");
+                                        return false;
+                                }
+                                else{
+					var uname = document.getElementById("uname").value;
+                                        var pword = document.getElementById("pword").value;
+
+
+                                        $.post('/authUser', {
+                                                
+						uname : uname,
+                                                pword : pword
+
+					}, function(data, status){
+						if(data.lind == "True"){
+                                                        $('#login').hide();
+                                                        $('#birthdayMessage').show();
+                                                }
+						else if(data.jwt != 'BadRequest'){
+							$('#login').hide();
+                                        		$('#books').show();
+							populateBooks();
+						}
+						else{
+							alert("Bad Credentials");
+						}
+                                        }, 'json');
+					
+                                        return false;
+                                }
+			}
+			function returnToLogin(){
+				$('#createUser').hide();
+                                $('#userCreated').hide();
+				$('#purchasedBooks').hide();
+				$('#login').show();
+			}
+			function populateBooks(){
+				
+				$.get('/getBooks', function (data){
+					for (let i = 0; i < data.bookList.length; i++) {
+ 						//$('#bookTable').append('<label for="book' + i + '">Title: ' + data.bookList[i][0] + ', Price: ' + data.bookList[i][1] + ' </label>');	
+						//$('#bookTable').append('<input type="checkbox" id="book' + i + '" name="book' + i +'" value="Bike"><br>');
+
+							$('#bookTable').append('<tr><td><input class="buyBox" value="book' + i + '" type="checkbox"></td><td>' + data.bookList[i][0] + '</td><td>' + data.bookList[i][1] + '</td></tr>');					
+					}
+				}, 'json');
+				$('#books').append('<input type="submit" value="Purchase" onclick="return showPurchasedBooks();"><br>');
+			}
+			function showPurchasedBooks(){
+				$('#books').hide();
+                                $('#purchasedBooks').show();
+				
+				$.get('/getBooks', function (data){
+					var inputElements = document.getElementsByClassName('buyBox');
+					for(let i=0; i < inputElements.length; i++){
+						if(inputElements[i].checked){
+							$('#purchasedTable').append('<tr><td>' + data.bookList[i][0] + '</td><td>' + data.bookList[i][1] + '</td></tr>');
+						}
+					}
+	                        }, 'json');
+				$('#purchasedBooks').append('<input type="submit" value="Return to Login (Refresh)" onclick="refreshPage();"><br>');
+			}
+			function refreshPage(){
+    				window.location.reload();
+			}
+
+                </script>
+		<div id="pageTitle">
+			<h1>Royal Flush Books</h1>
+		</div>
+                <div id ="login">
+                                <form action="/authUser" method="post">
+                                        <label for="uname">Username:</label><br>
+                                                <input type="text" id="uname" name="uname"><br>
+                                        <label for="pword">Password:</label><br>
+                                                <input type="password" id="pword" name="pword"><br>
+					<input type="submit" value="Login" onclick="return checkAuth();">
+					<input type="submit" value="New User" onclick="return promptForNewUser();">
+                                </form>
+                </div>
+		<div id ="createUser" style="display:none;">
+                                <form action="/makeUser" method="post">
+                                        <label for="uname">Username:</label><br>
+                                                <input type="text" id="cuname" name="cuname"><br>
+                                        <label for="pword">Password:</label><br>
+                                                <input type="password" id="cpword" name="cpword"><br>
+                                        <input type="submit" value="Create Login" onclick="return check_create_form();">
+                                </form>
+                </div>
+		<div id="books" style="display:none;">
+					
+                	<h2>Login Successful</h2>
+			<h1>Please Select Books for Purchase</h1>
+			<table id="bookTable">
+				<tr>
+                                        <th>Buy?</th>
+					<th>Title</th>
+                                        <th>Price</th>
+
+				</tr>
+
+                        </table>
+                </div>
+		<div id="userCreated" style="display:none;">
+                        <h2>User Created</h2>
+                        <button type="submit" value="Return to Login" onclick="return refreshPage();">Return to login</button>
+
+                </div>
+		<div id="purchasedBooks" style="display:none;">
+			<h2>Purchased Books:</h2>
+			<table id="purchasedTable">
+    				<tr>
+					<th>Title</th>
+        				<th>Price</th>
+				</tr>
+			</table>
+		</div>
+		<div id="birthdayMessage" style="display:none">
+			<h1>Happy Birthday!!</h1>
+			<h2>-Ryan</h2>
+			<button type="submit" value="Return to Login" onclick="return refreshPage();">Return to login</button>
+		</div>
+	</body>
+</html>

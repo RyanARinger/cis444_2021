@@ -208,11 +208,12 @@
                                         $('#createUser').show();
                                         return false;
                         }
-			function returnToLogin(){
+			function returnToMenu(){
                                 $('#createUser').hide();
                                 $('#userCreated').hide();
-                                $('#menu').hide();
-                                $('#login').show();
+				$('#todo').hide();
+				$('#cal').hide();
+                                $('#menu').show();
                         }
 			function refreshPage(){
                                 window.location.reload();
@@ -266,10 +267,12 @@
                                         <th>Done?</th>
 
                                 </tr>
+				<button type="button" class="fill" onclick="return returnToMenu();">Back to menu</button></br></br>
 
                         </table>
                 </div>
 		<div id="cal" style="display:none">
+			<button type="button" class="fill" onclick="return returnToMenu();">Back to menu</button></br></br>
 		<div class="month">
   			<ul>
     				<li class="prev">&#10094;</li>
